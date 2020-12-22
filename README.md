@@ -53,6 +53,36 @@ php -v
 ```
 ![image](./images/20201222121623.png)
 
+# 下載並安裝composer
+
+```bash
+curl -sS https://getcomposer.org/installer | php
+```
+![image](./images/20201222223447.png)
+
+# 設定composer
+
+將下載的 composer.phar 移至環境下，並更名為 composer，即可執行指令 composer
+```bash
+mv composer.phar /usr/local/bin/composer
+```
+![image](./images/20201222223752.png)
+
+# 查看composer版本
+
+```bash
+composer -V
+```
+![image](./images/20201222224013.png)
+
+發現composer版本似乎太新
+
+經google找到舊版本 1.5.2
+
+https://github.com/composer/composer/releases/tag/1.5.2
+
+![image](./images/20201222233826.png)
+
 # 參考文檔
 
 ## PHP

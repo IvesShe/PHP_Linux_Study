@@ -83,6 +83,26 @@ https://github.com/composer/composer/releases/tag/1.5.2
 
 ![image](./images/20201222233826.png)
 
+# 安裝可能碰到的問題
+
+## 檔案權限不足
+
+-bash: /usr/local/bin/composer: Permission denied
+
+修改composer檔案權限
+```bash
+chmod 755 composer
+```
+
+## 環境變數沒有關連
+
+/usr/bin/env: php: No such file or directory
+
+增加軟連結
+```bash
+ln -s /usr/local/webserver/php/bin/php /usr/local/bin/php
+```
+
 # 參考文檔
 
 ## PHP

@@ -4,6 +4,10 @@
 
 # 安裝PHP
 
+這邊是使用yum安裝，若要自己configure、make及make install的話，請參考這篇
+
+https://github.com/IvesShe/PHP_FPM_Nginx_MySQL_Redis
+
 ## 安裝所須軟體
 ```bash
 yum install -y wget yum-utils
@@ -94,6 +98,12 @@ https://github.com/composer/composer/releases/tag/1.5.2
 chmod 755 composer
 ```
 
+or
+
+```bash
+chmod +x composer
+```
+
 ## 環境變數沒有關連
 
 /usr/bin/env: php: No such file or directory
@@ -102,6 +112,44 @@ chmod 755 composer
 ```bash
 ln -s /usr/local/webserver/php/bin/php /usr/local/bin/php
 ```
+
+# Compoer變更鏡像
+
+若覺得原始的鏡像速度太慢，才需要變更
+
+## 查看目前鏡像
+
+```bash
+composer config -g -l
+```
+
+![image](./images/20210102115056.png)
+
+## 變更目前鏡像
+
+Packagist / Composer 中国全量镜像
+
+https://pkg.phpcomposer.com/
+
+```bash
+composer config -g repo.packagist composer https://packagist.phpcomposer.com
+```
+
+![image](./images/20210102115402.png)
+
+# Composer相關依賴包
+
+php相關的依賴包都可以在這裡找到，這邊是對應GitHub的資料
+
+之前學習的laravel及其相關的依賴，也是在這邊安裝的
+
+https://packagist.org/
+
+
+![image](./images/20210102115521.png)
+
+![image](./images/20210102115717.png)
+
 
 # 參考文檔
 

@@ -1,4 +1,4 @@
-# PHP Linux Study
+# PHP Composer Linux
 
 練習並記錄PHP在Linux的環境下安裝並運行，也方便以要用運用時可以快速查找之前的經驗值
 
